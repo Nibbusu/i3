@@ -170,10 +170,10 @@ bar {
     statusline         #cdd6f4
     focused_statusline #cdd6f4
     focused_separator  #1e1e2e
-    focused_workspace  #1e1e2e #1e1e2e #cba6f7
-    active_workspace   #1e1e2e #1e1e2e #89b4fa
-    inactive_workspace #1e1e2e #1e1e2e #45475a
-    urgent_workspace   #1e1e2e #1e1e2e #45475a
+    focused_workspace  #cba6f7 #cba6f7 #1e1e2e
+    active_workspace   #313244 #313244 #cdd6f4
+    inactive_workspace #313244 #313244 #cdd6f4
+    urgent_workspace   #f5e0dc #f5e0dc #1e1e2e
     binding_mode       #1e1e2e #1e1e2e #45475a
   }}
 
