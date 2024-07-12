@@ -40,6 +40,9 @@ bindsym $mod+Return exec alacritty
 # start a firefox
 bindsym $mod+space exec firefox
 
+# Flameshot
+#bindsym $mod+s exec flameshot gui
+
 # kill focused window
 bindsym Control+q kill
 
