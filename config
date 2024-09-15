@@ -169,30 +169,43 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# Set colors
+set $bg #282828
+set $text #ebdbb2
+set $red #cc241d
+set $green #98971a
+set $yellow #d79921
+set $blue #458588
+set $purple #b16286
+set $aqua #689d68
+set $gray #a89984
+set $darkgray #1d2021
+
+
 # Start i3bar to display a workspace bar 
 
 bar {
         status_command i3status
   colors {
-    background         #1e1e2e
-    statusline         #cdd6f4
-    focused_statusline #cdd6f4
-    focused_separator  #1e1e2e
-    focused_workspace  #cba6f7 #cba6f7 #1e1e2e
-    active_workspace   #313244 #313244 #cdd6f4
-    inactive_workspace #313244 #313244 #cdd6f4
+    background         $bg
+    statusline         $text
+    focused_statusline $text
+    focused_separator  $text
+    focused_workspace  $yellow $yellow $bg
+    active_workspace   $bg     $yellow $yellow
+    inactive_workspace $bg     $bg     $yellow
     urgent_workspace   #f5e0dc #f5e0dc #1e1e2e
     binding_mode       #1e1e2e #1e1e2e #45475a
   }}
 
 # target                 title     bg      text     indicator  border
-client.focused           #b4befe   #1e1e2e #cdd6f4  #f5e0dc    #b4befe
-client.focused_inactive  #6c7086   #1e1e2e #cdd6f4  #f5e0dc    #6c7086
-client.unfocused         #6c7086   #1e1e2e #cdd6f4  #f5e0dc    #6c7086
-client.urgent            #fab387   #1e1e2e #fab387  #6c7086    #fab387
-client.placeholder       #6c7086   #1e1e2e #cdd6f4  #6c7086    #6c7086
+client.focused           $yellow   $yellow $bg      $green     $yellow
+client.focused_inactive  $bg       $bg     $yellow  $green     $bg
+client.unfocused         $bg       $bg     $yellow  $green     $bg
+client.urgent            $purple   $purple $bg      $green     $purple
+client.placeholder       #6c7086   #282828 #cdd6f4  #6c7086    #6c7086
 
-client.background        #1e1e2e
+client.background        $bg
 
 exec_always feh --bg-fill $HOME/Downloads/vagabond.jpeg
 exec_always setxkbmap sk qwerty
@@ -203,7 +216,7 @@ exec_always setxkbmap sk qwerty
 #exec_always xrandr --output eDP-1 --mode 1920x1080 --pos 1920x0 --rotate normal --output DP-1 --off --output DP-2 --off --output HDMI-1-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DP-1-3 --off
 
 #Byt
-exec_always xrandr --output eDP-1 --mode 1920x1080 --pos 4000x920 --rotate normal --output DP-1 --off --output DP-2 --off --output HDMI-1-1 --mode 2560x1440 --pos 0x0 --rotate left --output DP-1-3 --primary --mode 2560x1440 --pos 1440x740 --rotate normal
+#exec_always xrandr --output eDP-1 --mode 1920x1080 --pos 4000x920 --rotate normal --output DP-1 --off --output DP-2 --off --output HDMI-1-1 --mode 2560x1440 --pos 0x0 --rotate left --output DP-1-3 --primary --mode 2560x1440 --pos 1440x740 --rotate normal
 
 #Single
-#exec_always xrandr --output eDP-1 --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output DP-1 --off --output DP-2 --off --output HDMI-1-1 --off --output DP-1-3 --off
+exec_always xrandr --output eDP-1 --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output DP-1 --off --output DP-2 --off --output HDMI-1-1 --off --output DP-1-3 --off
