@@ -210,6 +210,10 @@ client.background        $bg
 exec_always feh --bg-fill $HOME/Downloads/fall-of-icarus.jpg
 exec_always setxkbmap sk qwerty
 
+# Border + no tittle bar
+default_border pixel 4
+
+# Gaps
 gaps inner 8
 gaps outer 8
 
