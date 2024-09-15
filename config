@@ -210,6 +210,9 @@ client.background        $bg
 exec_always feh --bg-fill $HOME/Downloads/fall-of-icarus.jpg
 exec_always setxkbmap sk qwerty
 
+gaps inner 8
+gaps outer 8
+
 # Screen layout
 
 #RT
