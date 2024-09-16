@@ -53,6 +53,9 @@ bindsym $mod+d exec --no-startup-id dmenu_run
 bindsym Control+space exec --no-startup-id rofi -show drun
 bindsym $mod+Tab exec --no-startup-id rofi -show window
 
+# lock screen
+bindsym $mod+Shift+z exec i3lock
+
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
@@ -210,6 +213,7 @@ client.background        $bg
 
 exec_always feh --bg-fill $HOME/Downloads/fall-of-icarus.jpg
 exec_always setxkbmap sk qwerty
+exec_always /home/maro/trackball.sh
 
 # Border + no tittle bar
 default_border pixel 4
