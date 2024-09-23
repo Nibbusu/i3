@@ -209,7 +209,7 @@ client.background        $bg
 
 exec_always feh --bg-fill $HOME/Downloads/fall-of-icarus.jpg
 exec_always setxkbmap sk qwerty
-exec_always /home/maro/trackball.sh
+exec_always /home/maro/scripts/trackball.sh
 
 # Border + no tittle bar
 default_border pixel 4
