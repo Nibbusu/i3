@@ -177,7 +177,7 @@ client.placeholder       #6c7086   #282828 #cdd6f4  #6c7086    #6c7086
 client.background        $bg
 
 #Setting BG
-exec_always feh --bg-fill $HOME/Downloads/fall-of-icarus.jpg
+exec_always feh --bg-fill ~/.config/i3/fall-of-icarus.jpg
 
 #Keeb and Ball
 exec_always setxkbmap sk qwerty
